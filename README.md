@@ -27,5 +27,4 @@ This project is my **first full-stack web application**, focusing on responsive 
 
 ## 🚀 Deployment
 - Frontend deployed on **GitHub Pages**
-- Backend deployed on cloud platform (Render / Railway)
 - Frontend and backend connected via REST APIs
