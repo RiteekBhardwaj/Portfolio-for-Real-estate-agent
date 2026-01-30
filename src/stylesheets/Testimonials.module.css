@@ -1,0 +1,86 @@
+.wrapper {
+  text-align: center;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  font-size: var(--prgh-font-size);
+}
+.heading {
+  font-size: calc(var(--head-font-size) - 12px);
+  font-weight: calc(var(--head-font-weight) - 200);
+  color: var(--blue-clr);
+}
+.sliderContainer {
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  list-style-type: none;
+  width: 100%;
+}
+.slide {
+  flex: 0 0 auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+  align-items: center;
+  width: calc(100% - 16px);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.profileImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+  background-color: white;
+}
+.paragraph {
+  font-weight: var(--prgh-font-weight);
+}
+.namebox {
+  font-weight: var(--link-font-weight);
+  color: var(--blue-clr);
+}
+.text {
+  padding: 6px 12px;
+  background-color: var(--white-clr);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.prev,
+.next {
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: var(--blue-clr);
+  color: var(--white-clr);
+  border: 1px solid var(--blue-clr);
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+}
+.prev:hover,
+.next:hover {
+  background-color: var(--white-clr);
+  color: var(--blue-clr);
+}
+@media screen and (max-width: 768px) {
+  .prev:active,
+  .next:active {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+  }
+}

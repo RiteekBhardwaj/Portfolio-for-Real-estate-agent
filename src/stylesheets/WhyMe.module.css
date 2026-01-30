@@ -1,0 +1,95 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: var(--prgh-font-size);
+  font-weight: var(--prgh-font-weight);
+}
+.text h4 {
+  font-size: calc(var(--head-font-size) - 12px);
+  font-weight: calc(var(--head-font-weight) - 200);
+  color: var(--blue-clr);
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: fit-content;
+}
+.points > * {
+  display: flex;
+  gap: 16px;
+}
+.points .image,
+.points .text {
+  flex: 1;
+  align-content: center;
+  overflow: hidden;
+}
+.text p {
+  line-height: var(--prgh-line-height);
+  text-align: justify;
+}
+.points .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+}
+.points .image {
+  height: 340px;
+  border-radius: 20px;
+}
+.points .image img {
+  border-radius: 20px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.points :nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.points :nth-child(odd) h4 {
+  text-align: end;
+}
+@media screen and (max-width: 1024px) {
+  .points .image {
+    height: 272px;
+  }
+}
+@media screen and (max-width: 845px) {
+  .points .image {
+    height: 224px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .points {
+    gap: 32px;
+  }
+  .points .text {
+    padding: 0;
+  }
+  .points .image img {
+    height: 224px;
+  }
+  .points > * {
+    flex-direction: column-reverse;
+  }
+  .points :nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .text {
+    align-items: center;
+  }
+  .text h4{
+    text-align: center;
+  }
+  .points :nth-child(odd) h4 {
+    text-align: center;
+  }
+  .points :nth-child(odd) .text {
+    align-items: center;
+  }
+}

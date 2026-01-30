@@ -1,0 +1,107 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.first-name {
+  margin-bottom: -10px;
+}
+.last-name .field {
+  margin-left: 55px;
+}
+.intro-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.intro .field {
+  font-size: var(--prgh-font-size);
+  font-weight: var(--prgh-font-weight);
+  line-height: var(--prgh-line-height);
+}
+.contact-btns {
+  display: flex;
+  gap: 14px;
+}
+.new-to-rajan,
+.contact-rajan {
+  padding: var(--btn-padding);
+  color: var(--white-clr);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border-radius: var(--btn-border-radius);
+  border: 1px solid var(--blue-clr);
+  background-color: var(--blue-clr);
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+}
+.new-to-rajan:hover,
+.contact-rajan:hover {
+  background-color: var(--white-clr);
+  color: var(--blue-clr);
+}
+.intro-img {
+  flex: 1;
+  border-radius: 20px;
+}
+.intro-img img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.name-box strong {
+  color: var(--blue-clr);
+  font-size: var(--head-font-size);
+  font-weight: calc(var(--head-font-weight) - 100);
+}
+@media screen and (max-width: 1184px) {
+  .wrapper {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .intro-text {
+    gap: 15px;
+  }
+  .intro-img img {
+    width: calc(100vw - 60px);
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .new-to-rajan:active,
+  .contact-rajan:active {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .last-name .field {
+    margin: 0;
+  }
+  .wrapper {
+    text-align: center;
+  }
+  .contact-btns {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 499px) {
+  .intro-img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .wrapper {
+    text-align: center;
+    gap: 14px;
+  }
+  .intro-text {
+    gap: 12px;
+  }
+}

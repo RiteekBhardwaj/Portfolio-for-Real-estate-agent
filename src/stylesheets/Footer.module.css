@@ -1,0 +1,9 @@
+.wrapper {
+  font-size: var(--prgh-font-size);
+  font-weight: calc(var(--prgh-font-weight) + 100);
+  color: var(--white-clr);
+  text-align: center;
+}
+.wrapper span {
+  display: block;
+}

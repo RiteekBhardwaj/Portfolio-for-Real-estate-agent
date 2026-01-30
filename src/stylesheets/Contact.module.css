@@ -1,0 +1,123 @@
+.wrapper {
+  display: flex;
+  gap: 48px;
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+}
+.wrapper > div {
+  flex: 1;
+}
+.left {
+  border-radius: var(--btn-border-radius);
+}
+.left img {
+  border-radius: var(--btn-border-radius);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
+  border-radius: 16px;
+}
+.right .heading h4 {
+  font-size: calc(var(--head-font-size) - 12px);
+  font-weight: calc(var(--head-font-weight) - 200);
+  color: var(--blue-clr);
+  text-align: center;
+}
+.right p {
+  text-align: center;
+}
+.form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 240px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.form input,
+.message {
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 40px;
+  padding: 20px;
+  font-size: var(--btn-font-size);
+  transition: border-color 0.4s;
+}
+.form input::placeholder,
+.message::placeholder {
+  color: rgb(102, 100, 100);
+}
+/* .form input:focus-within,
+.message:focus-within {
+  border-color: var(--primary-background);
+} */
+.message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  resize: none;
+}
+.form button {
+  width: 12em;
+  margin-left: 74%;
+  padding: var(--btn-padding);
+  color: var(--white-clr);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border-radius: var(--btn-border-radius);
+  border: 1px solid var(--blue-clr);
+  background-color: var(--blue-clr);
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+}
+.form button:hover {
+  background-color: var(--white-clr);
+  color: var(--blue-clr);
+}
+.message {
+  border-radius: 20px;
+}
+@media screen and (max-width: 1184px) {
+  .form button {
+    margin-left: 68%;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .form button {
+    margin-left: 64%;
+  }
+  .form input,
+  .message {
+    padding: 12px 20px;
+  }
+}
+@media screen and (max-width: 974px) {
+  .form button {
+    width: fit-content;
+    margin: auto;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .message {
+    height: 180px;
+  }
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 768px) {
+  .form button:active {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+  }
+}

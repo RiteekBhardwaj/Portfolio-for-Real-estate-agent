@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+:root {
+  --wrapper-max-width: 1440px;
+  --padding: 100px 70px 100px 70px;
+  --prgh-font-size: 1.6rem;
+  --prgh-font-weight: 500;
+  --prgh-line-height: 24px;
+  --btn-font-size: 1.4rem;
+  --btn-font-weight: 700;
+  --btn-padding: 9px 20px;
+  --nav-menu-btn-padding: 8px 20px;
+  --btn-border-radius: 25px;
+  --head-font-size: 5rem;
+  --head-font-weight: 900;
+  --link-font-size: 1.6rem;
+  --link-font-weight: 700;
+  --blue-clr: rgb(0, 26, 114);
+  --black-clr: black;
+  --white-clr: white;
+  --gray-clr: #f7f7f7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.App-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: top 0.3s ease-in-out;
+  background-color: var(--white-clr);
+}
+.App-nav > div {
+  max-width: var(--wrapper-max-width);
+  position: sticky;
+  top: 0;
+  /* border: 1px solid black; */
+  z-index: 1000;
+  padding: var(--padding);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.App-header {
+  /* padding-bottom: 48px; */
+  background-image: url("./pictures/10.jpg");
+  /* background-color: slateblue; */
+}
+.App-header > div {
+  max-width: var(--wrapper-max-width);
+  padding: var(--padding);
+  margin: auto;
+}
+.App-testimonials {
+  background-color: var(--gray-clr);
+}
+.App-testimonials > div {
+  max-width: var(--wrapper-max-width);
+  padding: var(--padding);
+  margin: auto;
+}
+.App-listings > div {
+  max-width: calc(var(--wrapper-max-width));
+  margin: auto;
+  padding: var(--padding);
+  /* padding-bottom: 2em; */
+}
+.App-whyme > div {
+  max-width: 1440px;
+  margin: auto;
+  padding: var(--padding);
+  /* padding-bottom: 2em; */
+}
+.App-about {
+  background-image: url("./pictures/10.jpg");
+}
+.App-about > div {
+  max-width: var(--wrapper-max-width);
+  padding: var(--padding);
+  margin: auto;
+}
+.App-faq {
+  background-color: var(--gray-clr);
+}
+.App-faq > div {
+  max-width: var(--wrapper-max-width);
+  padding: var(--padding);
+  margin: auto;
+  /* padding-bottom: 48px; */
+}
+.App-contact > div {
+  max-width: var(--wrapper-max-width);
+  padding: var(--padding);
+  /* padding-bottom: 2em; */
+  margin: auto;
+}
+.App-footer {
+  background-color: var(--blue-clr);
+}
+.App-footer > div {
+  max-width: var(--wrapper-max-width);
+  padding: 16px;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    --padding: 100px 31px 100px 30px;
+  }
+}
+@media screen and (max-width: 906px) {
+  .App-nav > div {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --prgh-line-height: 22px;
+  }
+}
+@media screen and (max-width: 560px) {
+  :root {
+    --head-font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 499px) {
+  :root {
+    --padding: 80px 14px;
+  }
+  .App-nav > div {
+    padding: 14px;
+  }
+}
+@media screen and (max-width: 375px) {
+  :root {
+    --padding: 60px 10px;
+  }
+}

@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 32px;
+  font-size: var(--prgh-font-size);
+}
+.icon{
+  width: 16px;
+}
+.wrapper a {
+  text-decoration: none;
+  color: black;
+  font-weight: var(--link-font-weight);
+}
+.wrapper strong:not(.name) {
+  font-weight: var(--link-font-weight);
+}
+.wrapper button {
+  padding: var(--btn-padding);
+  color: var(--white-clr);
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
+  border-radius: var(--btn-border-radius);
+  border: 1px solid var(--blue-clr);
+  background-color: var(--blue-clr);
+  cursor: pointer;
+  transition: color 0.4s, background-color 0.4s;
+}
+.wrapper button:hover {
+  background-color: var(--white-clr);
+  color: var(--blue-clr);
+}
+.name {
+  font-size: var(--head-font-size);
+  font-weight: calc(var(--head-font-weight) - 100);
+  color: var(--blue-clr);
+}
+.wrapper p {
+  line-height: var(--prgh-line-height);
+  font-weight: var(--prgh-font-weight);
+}
+.wrapper > div {
+  flex: 1;
+}
+.wrapper > :nth-child(1) {
+  border-radius: 20px;
+}
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.wrapper > :nth-child(2) {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper > :nth-child(2) > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.wrapper > :nth-child(2) > :nth-child(4) {
+  display: flex;
+  gap: 6px;
+}
+.wrapper > :nth-child(2) > :nth-child(2) > * {
+  display: flex;
+  gap: 6px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper button:active {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+  }
+}
