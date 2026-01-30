@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Portfolio-for-Real-estate-agent/static/css/main.ba35bb99.css",
+    "main.js": "/Portfolio-for-Real-estate-agent/static/js/main.13527217.js",
+    "static/js/453.354e0bc4.chunk.js": "/Portfolio-for-Real-estate-agent/static/js/453.354e0bc4.chunk.js",
+    "static/media/contactimg.jpg": "/Portfolio-for-Real-estate-agent/static/media/contactimg.c24de2d32ac49be75a04.jpg",
+    "static/media/10.jpg": "/Portfolio-for-Real-estate-agent/static/media/10.0b364e9de554502cb360.jpg",
+    "static/media/3.jpg": "/Portfolio-for-Real-estate-agent/static/media/3.f9dc5c31f6b53095bb25.jpg",
+    "static/media/profile2.jpg": "/Portfolio-for-Real-estate-agent/static/media/profile2.167440a9ee58f3305a74.jpg",
+    "static/media/1.jpg": "/Portfolio-for-Real-estate-agent/static/media/1.334f6f4a22bc4dc6a623.jpg",
+    "static/media/4.jpg": "/Portfolio-for-Real-estate-agent/static/media/4.065fd0c696083876c5b2.jpg",
+    "static/media/2.jpg": "/Portfolio-for-Real-estate-agent/static/media/2.2f953a62a6a8ece86247.jpg",
+    "index.html": "/Portfolio-for-Real-estate-agent/index.html",
+    "main.ba35bb99.css.map": "/Portfolio-for-Real-estate-agent/static/css/main.ba35bb99.css.map",
+    "main.13527217.js.map": "/Portfolio-for-Real-estate-agent/static/js/main.13527217.js.map",
+    "453.354e0bc4.chunk.js.map": "/Portfolio-for-Real-estate-agent/static/js/453.354e0bc4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba35bb99.css",
+    "static/js/main.13527217.js"
+  ]
+}
